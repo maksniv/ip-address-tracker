@@ -2,21 +2,21 @@
   <div class="answer-block">
     <div class="block">
       <div class="title">ip address</div>
-      <div class="value">{{ answer.query }}</div>
+      <div class="value">{{ answer.ip }}</div>
     </div>
     <div class="block">
       <div class="title">location</div>
       <div class="value">
-        {{ answer.country + ' ' + answer.city + ' ' + answer.zip }}
+        {{ answer.country_name + ' ' + answer.city + ' ' + answer.postal }}
       </div>
     </div>
     <div class="block">
       <div class="title">timezone</div>
-      <div class="value">{{ getCurrentUTC(answer.offset) }}</div>
+      <div class="value">{{ getCurrentUTC(answer.utc_offset) }}</div>
     </div>
     <div class="block">
       <div class="title">isp</div>
-      <div class="value">{{ answer.isp }}</div>
+      <div class="value">{{ answer.org }}</div>
     </div>
   </div>
 </template>
