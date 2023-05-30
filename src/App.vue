@@ -21,22 +21,21 @@ export default {
   data() {
     return {
       answer: {
-        query: '-',
+        ip: '-',
+        org: '-',
         city: '-',
-        isp: '-',
-        country: ' ',
-        zip: ' ',
-        lat: 0,
-        lon: 0,
+        country_name: ' ',
+        postal: ' ',
+        utc_offset: '-',
+        latitude: 0,
+        longitude: 0,
       },
     };
   },
   methods: {
     async searhData(ipAddress) {
       try {
-        const request = await fetch(
-          `http://ip-api.com/json/${ipAddress}?fields=continent,country,regionName,city,zip,lat,lon,timezone,offset,isp,query`
-        );
+        const request = await fetch(`https://ipapi.co/${ipAddress}/json/`);
         const response = await request.json();
         this.answer = response;
       } catch (error) {
