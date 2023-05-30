@@ -57,7 +57,7 @@ export default {
   height: 22rem;
 
   position: absolute;
-  bottom: -105%;
+  bottom: -110%;
 
   background-color: $white;
   border-radius: 0.9rem;
