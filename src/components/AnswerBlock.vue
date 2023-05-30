@@ -29,15 +29,13 @@ export default {
   },
   methods: {
     getCurrentUTC(time) {
-      if (isNaN(time)) {
+      if (time === '-') {
         return '-';
       }
-      const UTC = time / 3600;
-      if (UTC > 0) {
-        return 'UTC+' + UTC;
-      } else {
-        return 'UTC' + UTC;
-      }
+      const startString = time.substr(0, 3);
+      const endString = time.substr(3, 4);
+
+      return 'UTC' + startString + ':' + endString;
     },
   },
 };
