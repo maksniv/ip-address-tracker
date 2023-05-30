@@ -1,24 +1,14 @@
-# ip-address-tracker
+# IP Address Tracker
 
-## Project setup
-```
-npm install
-```
+SPA приложение, для поиска IP на карте. Реализовано:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1. Получение искомово IP из формы,
+2. Fetch запрос для получение данных об IP адресе, в том числе месторасположение,
+3. Отображение местораположения IP адреса на яндекс карте,
+4. Адаптивный дизайн.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Стек технологий
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- VUE
+- SCSS
+- Vue-yandex-map
