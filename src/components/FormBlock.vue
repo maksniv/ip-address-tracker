@@ -20,7 +20,6 @@ export default {
   },
   methods: {
     searhData() {
-      console.log(this.searhDataValue);
       this.$emit('searhData', this.searhDataValue);
       this.searhDataValue = '';
     },
