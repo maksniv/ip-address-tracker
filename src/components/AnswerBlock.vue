@@ -174,7 +174,7 @@ export default {
     bottom: -30%;
     .block {
       width: 25%;
-      height: 60%;
+      min-height: 60%;
       border-right: 2px solid $darkGrayColor;
       padding-left: 2rem;
       padding-right: 2rem;
